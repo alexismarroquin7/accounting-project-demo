@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { HomePage, ServicesPage } from '../widgets';
+import { HomePage, ServicesPage, Footer, SplashPage } from '../widgets';
 
 export default function Home() {
   return (
@@ -9,8 +9,10 @@ export default function Home() {
         <meta name="description" content="Accounting" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <SplashPage/>
       <HomePage/>
       <ServicesPage/>
+      <Footer/>
     </div>
   )
 }

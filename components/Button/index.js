@@ -14,15 +14,15 @@ export const Button = ({
   >
     
     <p>{text}</p>
-
+    
     <style jsx>{`
       .Button,
       .Button.contained {
         padding: 1rem;
         border-radius: 1rem;
-        border: .2rem solid #ddd;
-        color: black;
-        background-color: #eee;
+        border: .2rem solid var(--primary-color);
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
         font-weight: bold;
       }
 
@@ -33,6 +33,7 @@ export const Button = ({
       .Button.fullWidth {
         width: 100%;
       }
+
     `}</style>
   </button>
 }
