@@ -1,5 +1,6 @@
 import { Section } from "../../components";
 import { contact } from "../../data";
+import { ContactDetails } from "./ContactDetails";
 
 export const ContactPage = () => {
   return (
@@ -8,7 +9,14 @@ export const ContactPage = () => {
         className="contact-page-card"
       >
         <h3>{contact.title}</h3>
-        
+        {contact.description.split('<br>').map((line, i) => {
+          return (
+          <p
+            key={i}
+          >{line}</p>
+          )
+        })}
+        <ContactDetails/>
       </div>
 
       <style jsx>{`
