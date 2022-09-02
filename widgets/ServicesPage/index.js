@@ -24,9 +24,9 @@ export const ServicesPage = () => {
             >
               <h5>{service.title}</h5>
               <p>{service.description}</p>
-              <Button
-                text={service.button.text}
-              />
+              <Button>
+                {service.button.text}
+              </Button>
             </div>
             )
           })}
