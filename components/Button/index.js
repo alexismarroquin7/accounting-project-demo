@@ -1,9 +1,9 @@
 
 
 export const Button = ({
-  text = '',
   variant = '',
-  fullWidth = false
+  fullWidth = false,
+  children
 }) => {
   return <button
     className={`
@@ -13,7 +13,7 @@ export const Button = ({
     `}
   >
     
-    <p>{text}</p>
+    {children}
     
     <style jsx>{`
       .Button,

@@ -1,12 +1,12 @@
 export const splash = {
-  title: 'Lorem ipsum',
+  title: 'JOHN SMITH',
+  subTitle: 'Certified Public Accountant',
   location: {
-    city: 'Palo Alto',
+    city: 'PALO ALTO',
     state: 'CA'
   },
   contact: {
-    name: 'John Smith',
-    tel: '555-555-5555'
+    tel: 'CALL ME'
   },
   bottom: {
     text: 'Scroll to content'

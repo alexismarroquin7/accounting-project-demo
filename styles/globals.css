@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 :root {
   --primary-color: #333;
   --secondary-color: #fff;
+  --dark-green: #9EB23B;
 }
 
 * {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Aboreto', cursive;
   box-sizing: border-box;
 }
 
@@ -49,5 +51,9 @@ select,
 option,
 button,
 a {
+  font-size: 2rem;
+}
+
+.icon-font-size {
   font-size: 2rem;
 }

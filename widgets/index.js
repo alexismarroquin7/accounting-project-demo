@@ -1,3 +1,5 @@
+export * from "./AboutPage"
+export * from "./ContactPage"
 export * from "./Footer"
 export * from "./HomePage"
 export * from "./ServicesPage"

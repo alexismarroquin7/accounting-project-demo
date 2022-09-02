@@ -8,8 +8,8 @@ export const Section = ({ children }) => {
           display: flex;
           flex-flow: column wrap;
           align-items: center;
-          padding: 4rem 0;
-          border: 1px solid black;
+          padding: 8rem 0;
+          border: 1px solid var(--primary-color);
         }
       `}</style>
     </section>
