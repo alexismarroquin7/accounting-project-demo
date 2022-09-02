@@ -60,6 +60,7 @@ export const ServicesPage = () => {
           flex-flow: column wrap;
           gap: 2rem;
           align-items: flex-start;
+          border-radius: 1rem;
         }
       `}</style>
     </Section>

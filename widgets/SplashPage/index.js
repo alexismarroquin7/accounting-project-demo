@@ -19,7 +19,6 @@ export const SplashPage = () => {
           <button className="icon-font-size splash-page-more-details-button"><PhoneIcon fontSize="inherit"/>{splash.contact.tel}</button>
           <button className="icon-font-size splash-page-more-details-button">
             <LocationOnIcon fontSize="inherit"/>
-            
             {splash.location.city}, {splash.location.state}
           </button>
          
@@ -118,6 +117,10 @@ export const SplashPage = () => {
           flex-flow: column wrap;
           align-items: center;
           text-align: left;
+        }
+
+        .splash-page-main-text-wrapper p {
+          font-style: italic;
         }
 
         .splash-page-bottom-text {
