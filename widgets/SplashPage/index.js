@@ -13,40 +13,18 @@ export const SplashPage = () => {
         className="splash-page-wrapper"
 
       >
-        <div 
-          className="splash-page-more-details"
-        >
-          <button className="icon-font-size splash-page-more-details-button"><PhoneIcon fontSize="inherit"/>{splash.contact.tel}</button>
-          <button className="icon-font-size splash-page-more-details-button">
-            <LocationOnIcon fontSize="inherit"/>
-            {splash.location.city}, {splash.location.state}
-          </button>
-         
-        </div>
 
-        <div
-          className="splash-page-main-container"
-        >
         
+        <div
+          className="splash-page-main-text"
+        >
           <div
-            className="splash-page-main-text"
+            className="splash-page-main-text-wrapper"
           >
-            <div
-              className="splash-page-main-text-wrapper"
-            >
-              <h3>{splash.title}</h3>
-              <p>{splash.subTitle}</p>
-            </div>
+            <h3>{splash.title}</h3>
+            <p>{splash.subTitle}</p>
           </div>
-
-          <div
-            className="splash-page-menu-icon"
-          >
-            <MenuIcon/>
-          </div>
-          
-
-        </div>
+        </div>  
 
         
         <div
@@ -58,10 +36,11 @@ export const SplashPage = () => {
 
       <style jsx>{`
         section {
+          width: 100%;
           display: flex;
           flex-flow: column wrap;
           align-items: center;
-          padding: 4rem 0;
+          padding: 2rem 0;
         }
         
         .splash-page-wrapper {
@@ -72,16 +51,7 @@ export const SplashPage = () => {
           height: 80vh;
         }
 
-        .splash-page-more-details {
-          width: 100%;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          /* padding: 2rem 0; */
-        }
-        
         .splash-page-more-details-button {
-          padding: 1rem;
           font-weight: bold;
           display: flex;
           flex-flow: row wrap;
@@ -91,31 +61,23 @@ export const SplashPage = () => {
           color: var(--primary-color);
           border-radius: 1rem;
           border: 0;
-          /* border: 1px solid red; */
-        }
-
-        .splash-page-main-container {
-          width: 100%;
-          display: flex;
-          flex-flow: row wrap;
-          align-items: center;
-          justify-content: space-between;
-          padding-bottom: 25%;
-        }
+        } 
         
         .splash-page-main-text {
-          width: 90%;
+          width: 100%;
+          height: 60%;
           display: flex;
           flex-flow: column wrap;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
+          /* border: 1px solid red; */
         }
         
         .splash-page-main-text-wrapper {
-          width: 100%;
           display: flex;
           flex-flow: column wrap;
-          align-items: center;
+          align-items: flex-start;
+          justify-content: center;
           text-align: left;
         }
 
@@ -126,7 +88,7 @@ export const SplashPage = () => {
         .splash-page-bottom-text {
           width: 100%;
           display: flex;
-          flex-flow: column wrap;
+          flex-flow: row wrap;
           justify-content: center;
           align-items: center;
         }
