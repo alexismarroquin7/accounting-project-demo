@@ -11,7 +11,13 @@
 :root {
   --primary-color: #333;
   --secondary-color: #fff;
-  --dark-green: #9EB23B;
+  --white: #fff;
+  --black: #333;
+  --yellow-green: #D2D79F;
+  --color-a: #F0EBE3;
+  --color-b: #E4DCCF;
+  --color-c: #7D9D9C;
+  --color-d: #576F72;
 }
 
 * {
@@ -24,8 +30,8 @@
 }
 
 body {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  color: var(--black);
+  background-color: var(--color-a);
 }
 
 h1 {

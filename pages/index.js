@@ -3,7 +3,9 @@ import { HomePage, ServicesPage, Footer, SplashPage, AboutPage, ContactPage } fr
 
 export default function Home() {
   return (
-    <div>
+    <div
+      className='home'
+    >
       <Head>
         <title>John Smith CPA</title>
         <meta name="description" content="Accounting" />
@@ -15,6 +17,22 @@ export default function Home() {
       <AboutPage/>
       <ContactPage/>
       <Footer/>
+      <style jsx>{`
+        .home {
+          width: 100%;
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          transition: all .2s;
+        }
+
+        @media (min-width: 576px) {
+          .home {
+            width: 90%;
+          }
+        }
+
+      `}</style>
     </div>
   )
 }

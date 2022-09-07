@@ -29,7 +29,8 @@ export const Footer = () => {
 
       <style jsx>{`
         footer {
-          border-top: .2rem solid var(--primary-color);
+          border-top: .2rem solid var(--color-d);
+          background-color: var(--color-d);
           width: 100%;
           display: flex;
           flex-flow: column wrap;
@@ -47,7 +48,7 @@ export const Footer = () => {
         }
         
         a {
-          color: var(--primary-color);
+          color: var(--color-a);
         }
 
         .footer-bottom-text-container {
@@ -56,6 +57,7 @@ export const Footer = () => {
           flex-flow: column wrap;
           align-items: flex-start;
           gap: 2rem;
+          color: var(--color-a);
         }
 
         .footer-sub-text {

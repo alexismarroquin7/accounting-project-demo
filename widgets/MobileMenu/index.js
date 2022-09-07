@@ -23,12 +23,17 @@ export const MobileMenu = ({open = false}) => {
           align-items: center;
           justify-content: center;
           gap: 8rem;
-          background-color: lightblue;
+          background-color: var(--color-d);
           transition: all .2s;
         }
 
         a {
-          color: var(--primary-color);
+          color: var(--color-b);
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: underline;
         }
         
         .hidden {

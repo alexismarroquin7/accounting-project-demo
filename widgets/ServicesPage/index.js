@@ -42,6 +42,7 @@ export const ServicesPage = () => {
           flex-flow: column wrap;
           gap: 2rem;
           align-items: flex-start;
+          
         }
 
         .services-list {
@@ -54,14 +55,35 @@ export const ServicesPage = () => {
         
         .services-item {
           width: 100%;
-          border: 1px solid black;
           padding: 4rem 2rem;
           display: flex;
           flex-flow: column wrap;
           gap: 2rem;
           align-items: flex-start;
           border-radius: 1rem;
+          border: .2rem solid var(--color-b);
+          background-color: var(--color-b);
+          box-shadow: 0 2px 10px 0 rgba(0,0,0,.75);
         }
+        
+        /*
+          breakpoints:
+            [ ] 576px for portrait phones
+            [ ] 768px for tablets
+            [ ] 992px for laptops
+            [ ] 1200px for large devices
+        */
+        @media (min-width: 1200px) {
+          .services-list {
+            flex-flow: row wrap;
+            justify-content: space-between;
+          }
+          
+          .services-item {
+            width: 30%;
+          }
+        }
+
       `}</style>
     </Section>
   )

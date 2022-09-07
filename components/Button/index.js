@@ -20,10 +20,13 @@ export const Button = ({
       .Button.contained {
         padding: 1rem;
         border-radius: 1rem;
-        border: .2rem solid var(--primary-color);
-        color: var(--primary-color);
-        background-color: var(--secondary-color);
+        border: .2rem solid var(--color-d);
+        color: var(--black);
+        background-color: var(--color-d);
+        color: var(--color-a);
         font-weight: bold;
+        display: flex;
+        flex-flow: row wrap;
       }
 
       .Button.outlined {
