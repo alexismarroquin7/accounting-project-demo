@@ -1,6 +1,15 @@
-export const MenuIcon = () => {
+export const MenuIcon = ({onClick = null}) => {
   return (
-    <button>
+    <button
+      onClick={(e) => {
+        if(typeof onClick !== 'function') {
+          e.preventDefault();
+          e.stopPropagation();
+        } else {
+          onClick(e);
+        }
+      }}
+    >
       
       <svg
         width="2rem"

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+/*
+  breakpoints:
+    [ ] 576px for portrait phones
+    [ ] 768px for tablets
+    [ ] 992px for laptops
+    [ ] 1200px for large devices
+*/
+
 :root {
   --primary-color: #333;
   --secondary-color: #fff;
