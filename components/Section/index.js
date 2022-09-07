@@ -9,7 +9,7 @@ export const Section = ({ children }) => {
           flex-flow: column wrap;
           align-items: center;
           padding: 8rem 0;
-          border: 1px solid var(--primary-color);
+          background-color: var(--color-c);
         }
       `}</style>
     </section>

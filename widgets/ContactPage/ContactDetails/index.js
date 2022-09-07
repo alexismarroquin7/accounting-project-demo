@@ -49,7 +49,7 @@ export const ContactDetails = () => {
           display: flex;
           flex-flow: row nowrap;
           gap: 1rem;
-          color: var(--primary-color);
+          color: var(--black);
         }
         
       `}</style>

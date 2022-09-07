@@ -28,7 +28,7 @@ export const MenuIcon = ({onClick = null}) => {
         }
 
         path {
-          stroke: var(--primary-color);
+          stroke: var(--black);
           stroke-width: 10;
         }
         .menu-icon-top {

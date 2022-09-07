@@ -1,9 +1,9 @@
 import { splash } from "../../data";
-import { MenuIcon } from "../../icons";
-import {
-  LocationOn as LocationOnIcon,
-  Phone as PhoneIcon
-} from '@mui/icons-material';
+// import { MenuIcon } from "../../icons";
+// import {
+//   LocationOn as LocationOnIcon,
+//   Phone as PhoneIcon
+// } from '@mui/icons-material';
 
 export const SplashPage = () => {
   return (
@@ -40,7 +40,9 @@ export const SplashPage = () => {
           display: flex;
           flex-flow: column wrap;
           align-items: center;
-          padding: 2rem 0;
+          padding: 4rem 0;
+          background-color: var(--color-d);
+          padding-top: 8rem;
         }
         
         .splash-page-wrapper {
@@ -57,8 +59,8 @@ export const SplashPage = () => {
           flex-flow: row wrap;
           align-items: center;
           gap: 1rem;
-          background-color: var(--secondary-color);
-          color: var(--primary-color);
+          /* background-color: var(--color-b); */
+          /* color: var(--color-a); */
           border-radius: 1rem;
           border: 0;
         } 
@@ -70,7 +72,7 @@ export const SplashPage = () => {
           flex-flow: column wrap;
           align-items: center;
           justify-content: center;
-          /* border: 1px solid red; */
+          color: var(--color-b);
         }
         
         .splash-page-main-text-wrapper {
@@ -83,6 +85,7 @@ export const SplashPage = () => {
 
         .splash-page-main-text-wrapper p {
           font-style: italic;
+          color: var(--color-a);
         }
 
         .splash-page-bottom-text {
@@ -97,6 +100,7 @@ export const SplashPage = () => {
           border: 0;
           background-color: transparent;
           font-weight: bold;
+          color: var(--color-a);
         }
       `}</style>
     </section>
