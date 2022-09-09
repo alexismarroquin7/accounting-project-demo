@@ -37,7 +37,7 @@ export const MobileMenu = ({open = false}) => {
         }
         
         .hidden {
-          transform: translateX(-100%);
+          transform: translateX(200%);
         }
       `}</style>
     </div>
