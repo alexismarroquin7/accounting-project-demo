@@ -1,5 +1,11 @@
-import { HomePage } from "../widgets"
+import { Footer, HomePage, Nav } from "../widgets"
 
 export default function WhatIDoPage () {
-  return <HomePage/>
+  return <div>
+    <Nav
+      activeHref={"/what-i-do"}
+    />
+    <HomePage/>
+    <Footer/>
+  </div>
 }

@@ -8,7 +8,9 @@ export const ContactPage = () => {
       <div
         className="contact-page-card"
       >
-        <h3>{contact.title}</h3>
+        <h3
+          className="contact-page-card-title"
+        >{contact.title}</h3>
         {contact.description.split('<br>').map((line, i) => {
           return (
           <p
@@ -27,6 +29,10 @@ export const ContactPage = () => {
           flex-flow: column wrap;
           gap: 2rem;
           align-items: flex-start;
+        }
+
+        .contact-page-card-title {
+          color: var(--color-b);
         }
       
       `}</style>

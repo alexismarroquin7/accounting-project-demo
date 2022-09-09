@@ -8,7 +8,9 @@ export const HomePage = () => {
       <div
         className="homepage-card"
       >
-        <h3>{home.title}</h3>
+        <h3
+          className="homepage-card-title"
+        >{home.title}</h3>
         
         {home.description.split('<br>').map((line, i) => {
           return (
@@ -29,6 +31,9 @@ export const HomePage = () => {
           flex-flow: column wrap;
           gap: 2rem;
           align-items: flex-start;
+        }
+        .homepage-card-title {
+          color: var(--color-b);
         }
       `}</style>
     </Section>

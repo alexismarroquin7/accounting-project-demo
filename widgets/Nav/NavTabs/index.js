@@ -9,7 +9,7 @@ const links = [
   },
   {
     id: uuid(),
-    href: "/what-id-do",
+    href: "/what-i-do",
     text: "What I Do"
   },
   {
@@ -43,11 +43,7 @@ export const NavTabs = ({ activeHref = '/' }) => {
           >
             <a
               className={`${activeHref === link.href ? 'active' : ''}`}
-            >{link.text}
-              {/* <span
-                className={`${activeHref === link.href ? 'active' : ''}`}
-              ></span> */}
-            </a>
+            >{link.text}</a>
           </Link>
         )
       })}
@@ -65,9 +61,8 @@ export const NavTabs = ({ activeHref = '/' }) => {
           display: flex;
           flex-flow: column wrap;
           align-items: center;
-          /* padding: 0 1rem; */
-          /* border: 1px solid red; */
-          border-bottom: .5rem solid transparent;
+          border-bottom: .2rem solid transparent;
+          transition: all .2s;
         }
         
         a.active {

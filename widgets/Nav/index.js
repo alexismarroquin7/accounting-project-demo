@@ -4,7 +4,7 @@ import { MobileMenu } from "../MobileMenu";
 import { useToggle } from "../../hooks";
 import { NavTabs } from "./NavTabs";
 
-export const Nav = () => {
+export const Nav = ({ activeHref, }) => {
   const {
     active: mobileMenuOpen,
     setActive: setMobileMenuOpen,
@@ -67,13 +67,19 @@ export const Nav = () => {
               }}
             />
           </div>
-          <NavTabs/>
+          <NavTabs
+            activeHref={activeHref}
+          />
         </div>
       </div>
       
       <MobileMenu 
         open={mobileMenuOpen} 
-        onClose={() => setMobileMenuOpen(false)}
+        onClose={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          handleToggle();
+        }}
       />
 
       <style jsx>{`
@@ -83,7 +89,6 @@ export const Nav = () => {
           flex-flow: row wrap;
           align-items: center;
           position: relative;
-          /* padding-bottom: 6rem; */
         }
         
         .nav-container {
@@ -134,9 +139,14 @@ export const Nav = () => {
         }
 
         @media (min-width: 996px) {
-
           .nav-mobile-menu-icon {
             display: none;
+          }
+        }
+        
+        @media (min-width: 1200px) {
+          .nav-container-wrapper {
+            width: 80%;
           }
         }
       `}</style>

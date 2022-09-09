@@ -11,7 +11,9 @@ export default function Home() {
         <meta name="description" content="Accounting" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav/>
+      <Nav
+        activeHref={"/"}
+      />
       <SplashPage/>
       <HomePage/>
       <ServicesPage/>
@@ -30,6 +32,12 @@ export default function Home() {
         @media (min-width: 576px) {
           .home {
             width: 90%;
+          }
+        }
+        
+        @media (min-width: 1200px) {
+          .home {
+            width: 80%;
           }
         }
 
