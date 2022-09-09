@@ -9,7 +9,9 @@ export const ServicesPage = () => {
         className="services-page-card"
       >
 
-        <h3>{services.title}</h3>
+        <h3
+          className="services-page-card-title"
+        >{services.title}</h3>
         
         <p>{services.description}</p>
         
@@ -22,7 +24,9 @@ export const ServicesPage = () => {
               key={service.id}
               className="services-item"
             >
-              <h5>{service.title}</h5>
+              <h5
+                className="services-item-title"
+              >{service.title}</h5>
               <p>{service.description}</p>
               <Button>
                 {service.button.text}
@@ -45,6 +49,10 @@ export const ServicesPage = () => {
           
         }
 
+        .services-page-card-title {
+          color: var(--color-b);
+        }
+
         .services-list {
           width: 100%;
           display: flex;
@@ -65,14 +73,11 @@ export const ServicesPage = () => {
           background-color: var(--color-b);
           box-shadow: 0 2px 10px 0 rgba(0,0,0,.75);
         }
+
+        .services-item-title {
+          color: var(--color-d);
+        }
         
-        /*
-          breakpoints:
-            [ ] 576px for portrait phones
-            [ ] 768px for tablets
-            [ ] 992px for laptops
-            [ ] 1200px for large devices
-        */
         @media (min-width: 1200px) {
           .services-list {
             flex-flow: row wrap;
